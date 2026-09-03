@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+
+  --color-ivory: #F9F5EE;
+  --color-ivory-light: #FDFBF6;
+  --color-ivory-warm: #F0E8D8;
+  --color-border: #E5DDD0;
+  --color-charcoal: #1A1714;
+  --color-charcoal-soft: #2D2723;
+  --color-taupe: #7A6B5E;
+  --color-taupe-light: #B8A99B;
+  --color-gold: #C4A26A;
+  --color-gold-pale: #E8DECE;
+  --color-champagne: #F0E8D8;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F9F5EE;
+  color: #1A1714;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+  40%           { transform: translateY(-5px); opacity: 1; }
+}
